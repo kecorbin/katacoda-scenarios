@@ -33,7 +33,7 @@ sandboxes.
 
 You can view this file by running
 
-`cat devnet_sandbox.yaml`{{execute}}
+`cat /root/pyats/devnet_sandbox.yaml`{{execute}}
 
 
 A more comprehensive testbed sample can be found

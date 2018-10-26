@@ -8,7 +8,7 @@ We will use the loader function to accomplish this
 
 <pre class="file" data-filename="pyats-intro.py" data-target="replace">
 from ats.topology import loader
-testbed = './katacoda-scenarios/pyats-intro/scripts/devnet_sandbox.yaml'
+testbed = '/root/pyats/devnet_sandbox.yaml'
 testbed = loader.load(testbed)
 </pre>
 
