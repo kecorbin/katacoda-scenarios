@@ -7,6 +7,9 @@
     "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
   },
+  "files": [
+        "pyats-intro.py"
+    ],
   "backend": {
     "imageid": "python"
   },

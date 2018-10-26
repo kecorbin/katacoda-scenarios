@@ -27,8 +27,17 @@
           port: 17000
   ```
 
-  A more comprehensive testbed sample can be found
-  <a href="https://pubhub.devnetcloud.com/media/pyats/docs/topology/schema.html#production-yaml-schema" target="_blank">
-  here
-  </a>
-  you should take a few minutes to review some of the additional options that can be configured for a given testbed.
+
+For this tutorial we've provided a testbed yaml file that uses DevNet always on
+sandboxes.
+
+You can view this file by running
+
+`cat devnet_sandbox.yaml`{{execute}}
+
+
+A more comprehensive testbed sample can be found
+<a href="https://pubhub.devnetcloud.com/media/pyats/docs/topology/schema.html#production-yaml-schema" target="_blank">
+here
+</a>
+you should take a few minutes to review some of the additional options that can be configured for a given testbed.
