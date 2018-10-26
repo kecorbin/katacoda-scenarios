@@ -11,7 +11,7 @@
         "pyats-intro.py"
     ],
   "backend": {
-    "imageid": "python"
+    "imageid": "docker"
   },
   "assets": {
     "host01": [{
