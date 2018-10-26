@@ -6,7 +6,7 @@ is load your testbed file
 
 We will use the loader function to accomplish this
 
-<pre class="file" data-filename="app.js" data-target="replace">
+<pre class="file" data-filename="pyats-intro.py" data-target="replace">
 from ats.topology import loader
 testbed = path + './katacoda-scenarios/pyats-intro/scriptsdevnet_sandbox.yaml'
 testbed = loader.load(testbed)
@@ -22,7 +22,7 @@ testbed = path + '/public_testbeds/devnet_sandbox.yaml'
 testbed = loader.load(testbed)
 
 
-<pre class="file" data-filename="app.js" data-target="replace">
+<pre class="file" data-filename="pyats-intro.py" data-target="append">
 csr = testbed.devices['csr1000v']
 csr.connect()
 csr.execute('show version')
