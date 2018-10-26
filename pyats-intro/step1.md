@@ -5,4 +5,4 @@ pyATS requires python3 and can be installed using pip
 
 To install pyATS simply type
 
-`pip3 install pyats`
+`pip3 install pyats`{{execute}}
