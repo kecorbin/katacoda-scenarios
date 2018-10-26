@@ -13,18 +13,19 @@
   "backend": {
     "imageid": "ubuntu"
   },
-  "assets": {
-    "host01": [{
-        "file": "*",
-        "target": "/root/pyats/"
-      }
-    ]
-  },
+
   "details": {
     "intro": {
       "courseData": "env-init.sh",
       "text": "intro.md",
       "credits": ""
+    },
+    "assets": {
+      "host01": [{
+          "file": "*",
+          "target": "/root/pyats/"
+        }
+      ]
     },
     "steps": [
       {
