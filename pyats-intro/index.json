@@ -26,14 +26,22 @@
   },
   "details": {
     "intro": {
-      "courseData": "setup.sh",
+      "courseData": "env-init.sh",
       "text": "intro.md",
       "credits": ""
     },
-    "steps": [{
+    "steps": [
+      {
       "title": "Step 1 - Installing pyATS",
       "text": "step1.md"
-    }],
+      },
+      {
+      "title": "Step 2 - Testbed Files",
+      "text": "step2.md"
+      },
+
+
+    ],
     "finish": {
       "text": "finish.md"
     }
