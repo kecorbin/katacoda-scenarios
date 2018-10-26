@@ -46,6 +46,7 @@ def get_interface_counters(dev):
     intf.learn()
     return intf.info
 
+
 </pre>
 
 ## Configure Testbed
@@ -54,7 +55,8 @@ All that is left is to pass one of the devices from our testbed to the function
 we just created.
 
 <pre class="file" data-filename="genie-intro.py" data-target="append">
-from ats.topology import loader
+
+
 testbed = '/root/pyats/devnet_sandbox.yaml'
 testbed = loader.load(testbed)
 testbed = Genie.init(testbed)
@@ -72,8 +74,8 @@ we'll have structured data for all of the interface counters on the device.
 
 <pre class="file" data-filename="genie-intro.py" data-target="append">
 csr = testbed.devices['csr1000v']
-csr_interface_counters = get_interface_counters(csr))
-print(csr_interface_counters)
+csr_interface_details = get_interface_counters(csr)
+print(csr_interface_details)
 </pre>
 
 
@@ -90,6 +92,32 @@ the show commands themselve to gather the data may be different across platforms
 
 <pre class="file" data-filename="genie-intro.py" data-target="append">
 nx = testbed.devices['nxos']
-nx_interface_counters = get_interface_counters(nx))
-print(nx_interface_counters)
+nx_interface_details = get_interface_counters(nx)
+print(nx_interface_details)
+</pre>
+
+
+## Re-Run your code!
+
+This time we will parse two device types with the same code!
+
+`python3 genie-intro.py`{{execute}}
+
+
+## So What???
+
+Now that we don't have to worry about platform specific deetails, we can get
+just the information we care about.  Here's an example
+
+
+<pre class="file" data-filename="genie-intro.py" data-target="append">
+all_interfaces = dict()
+all_interfaces['csr'] = csr_interface_details
+all_interfaces['nxos'] = nx_interface_details
+
+for device, interface_details in all_interfaces.items():
+    for interface, details in interface_details.items():
+        if 'ipv4' in details:
+            for ip, details in details['ipv4'].items():
+                print("Device {} Interface {} IP details: {}".format(device, interface, ip))
 </pre>
