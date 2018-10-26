@@ -1,4 +1,3 @@
-# Introduction to pyATS
 
 pyATS is an end-to-end testing ecosystem, specializing in data-driven and reusable testing, engineered to empower Agile and rapid development iterations. Extensible by design, pyATS enables developers to start with small, simple and linear test cases and easily scale towards large, complex
 

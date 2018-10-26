@@ -38,8 +38,11 @@
       {
         "title": "Step 2 - Testbed Files",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Connecting to the testbed",
+        "text": "step3.md"
       }
-
 
     ],
     "finish": {
