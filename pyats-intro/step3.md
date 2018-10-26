@@ -24,3 +24,9 @@ csr = testbed.devices['csr1000v']
 csr.connect()
 csr.execute('show version')
 </pre>
+
+
+You can now run this code with the following command
+
+
+`python3 pyats-intro.py`{{execute}}
