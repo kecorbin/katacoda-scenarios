@@ -34,7 +34,7 @@
     "uilayout": "editor-terminal"
   },
   "files": [
-        "pyats-intro.py"
+        "genie-intro.py"
     ],
   "backend": {
     "imageid": "ubuntu"
