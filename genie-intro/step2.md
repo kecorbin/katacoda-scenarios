@@ -121,3 +121,8 @@ for device, interface_details in all_interfaces.items():
             for ip, details in details['ipv4'].items():
                 print("Device {} Interface {} IP details: {}".format(device, interface, ip))
 </pre>
+
+## Re-Run your code!
+
+
+`python3 genie-intro.py`{{execute}}
