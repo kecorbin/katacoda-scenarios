@@ -3,25 +3,12 @@
   "description": "An introduction to pyATS",
   "difficulty": "beginner",
   "time": "15 minutes",
-  "details": {
-    "intro": {
-      "courseData": "setup.sh",
-    },
-    "steps": [{
-      "title": "Step 1 - Installing pyATS",
-      "text": "step1.md"
-    }],
-    "intro": {
-      "text": "intro.md",
-      "credits": ""
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "environment": {
     "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "python"
   },
   "assets": {
     "host01": [{
@@ -31,11 +18,23 @@
       {
         "file": "*.py",
         "target": "~/"
-      },
-
+      }
     ]
   },
-  "backend": {
-    "imageid": "python"
+  "details": {
+    "intro": {
+      "courseData": "setup.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "steps": [{
+      "title": "Step 1 - Installing pyATS",
+      "text": "step1.md"
+    }],
+    "finish": {
+      "text": "finish.md"
+    }
   }
+
+
 }
