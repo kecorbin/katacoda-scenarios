@@ -15,11 +15,7 @@
   },
   "assets": {
     "host01": [{
-        "file": "*.yaml",
-        "target": "/root/pyats/"
-      },
-      {
-        "file": "*.py",
+        "file": "*",
         "target": "/root/pyats/"
       }
     ]
