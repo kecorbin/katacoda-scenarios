@@ -4,7 +4,7 @@
 First we need to import the relevant libraries we will be using for this
 exercise
 
-<pre class="file" data-filename="pyats-intro.py" data-target="replace">
+<pre class="file" data-filename="genie-intro.py" data-target="replace">
 from ats.topology import loader
 from genie.conf import Genie
 from genie.abstract import Lookup
@@ -24,7 +24,7 @@ For more information about the schema of this object see here:
 https://pubhub.devnetcloud.com/media/pyats-packages/docs/genie/genie_libs/#/models/interface
 
 
-<pre class="file" data-filename="pyats-intro.py" data-target="append">
+<pre class="file" data-filename="genie-intro.py" data-target="append">
 
 def get_interface_counters(dev):
     """
@@ -53,7 +53,7 @@ def get_interface_counters(dev):
 All that is left is to pass one of the devices from our testbed to the function
 we just created.
 
-<pre class="file" data-filename="pyats-intro.py" data-target="append">
+<pre class="file" data-filename="genie-intro.py" data-target="append">
 from ats.topology import loader
 testbed = '/root/pyats/devnet_sandbox.yaml'
 testbed = loader.load(testbed)
@@ -70,7 +70,7 @@ necessary properties.
 Now we simply pass our device object to the function that we created, and
 we'll have structured data for all of the interface counters on the device.
 
-<pre class="file" data-filename="pyats-intro.py" data-target="append">
+<pre class="file" data-filename="genie-intro.py" data-target="append">
 csr = testbed.devices['csr1000v']
 csr_interface_counters = get_interface_counters(csr))
 print(csr_interface_counters)
@@ -88,7 +88,7 @@ for us, so to demonstrate this we will parse counters for both our NX-OS as well
 IOS device.  The resulting data structures will be the same, even though the output, and even
 the show commands themselve to gather the data may be different across platforms.
 
-<pre class="file" data-filename="pyats-intro.py" data-target="append">
+<pre class="file" data-filename="genie-intro.py" data-target="append">
 nx = testbed.devices['nxos']
 nx_interface_counters = get_interface_counters(nx))
 print(nx_interface_counters)

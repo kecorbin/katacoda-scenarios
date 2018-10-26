@@ -33,6 +33,9 @@
   "environment": {
     "uilayout": "editor-terminal"
   },
+  "files": [
+        "pyats-intro.py"
+    ],
   "backend": {
     "imageid": "ubuntu"
   }
