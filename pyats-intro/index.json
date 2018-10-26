@@ -1,11 +1,11 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
+  "title": "Introduction to pyATS",
+  "description": "An introduction to pyATS",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Step 1 - Installing pyATS",
       "text": "step1.md"
     }],
     "intro": {
@@ -20,6 +20,9 @@
     "uilayout": "terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
+  "files": [
+        "first-pyats-script.py"
+    ],
   "backend": {
     "imageid": "bash"
   }
