@@ -1,0 +1,33 @@
+{
+  "title": "Introduction to Test Cases with pyATS and Genie",
+  "description": "Using pyATS to connect to devices and gather information, and Genie to parse that information, users can verify network operation in the form of test cases",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - pyATS Sample Scripts",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "courseData": "env-init.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
