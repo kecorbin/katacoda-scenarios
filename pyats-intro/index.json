@@ -16,11 +16,11 @@
   "assets": {
     "host01": [{
         "file": "*.yaml",
-        "target": "/home/scrapbook/tutorial/"
+        "target": "/root/pyats/"
       },
       {
         "file": "*.py",
-        "target": "/home/scrapbook/tutorial/"
+        "target": "/root/pyats/"
       }
     ]
   },
