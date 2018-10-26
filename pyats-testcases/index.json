@@ -1,6 +1,6 @@
 {
   "title": "Introduction to Test Cases with pyATS and Genie",
-  "description": "Using pyATS to connect to devices and gather information, and Genie to parse that information, users can verify network operation in the form of test cases",
+  "description": "Use pyATS and Genie to parse verify network functionality using Test Cases",
   "details": {
     "steps": [
       {
