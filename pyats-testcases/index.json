@@ -30,10 +30,7 @@
   "environment": {
     "uilayout": "editor-terminal"
   },
-  "files": [
-        "pyats/CRC_Count_check.py",
-        "pyats/CRC_check_job.py"
-    ],
+
   "backend": {
     "imageid": "ubuntu"
   }

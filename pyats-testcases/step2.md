@@ -58,4 +58,16 @@ you can use any of your existing libraries that you'd like.
 Really not much to do here, just logging a message that we're done.
 
 
-##
+## Job File
+
+Also, take a quick second, and review the `pyats/CRC_check_job.py` file,
+again there isn't much here, but this is a great place to take in command line
+arguments (like testbed), or otherwise input variables into your test execution.
+
+
+# Run the tests!
+
+Use easypy to execute your test
+
+`cd /root/pyats/`
+`easypy CRC_check_job.py -testbed_file ./devnet_sandbox.yaml`{{execute}}
