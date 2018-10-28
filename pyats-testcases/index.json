@@ -1,6 +1,7 @@
 {
   "title": "Introduction to Test Cases with pyATS and Genie",
   "description": "Use pyATS and Genie to verify network functionality using Test Cases",
+  "time": 25,
   "details": {
     "assets": {
       "host01": [{
