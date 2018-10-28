@@ -45,7 +45,6 @@ class common_setup(aetest.CommonSetup):
             except Exception as e:
                 self.failed("Failed to establish connection to '{}'".format(
                     device.name))
-
             device_list.append(device)
 
         # Pass list of devices the to testcases
@@ -63,16 +62,19 @@ class CRC_count_check(aetest.Testcase):
     @aetest.test
     def learn_interfaces(self):
         """ Learn all interface info and store in common data structure """
-
-        self.all_interfaces = {}
-        for dev in self.parent.parameters['dev']:
-            log.info(banner("Gathering Interface Information from {}".format(
-                dev.name)))
-            abstract = Lookup.from_device(dev)
-            intf = abstract.ops.interface.interface.Interface(dev)
-            intf.learn()
-            self.all_interfaces[dev.name] = intf.info
-
+        try:
+            self.all_interfaces = {}
+            for dev in self.parent.parameters['dev']:
+                log.info(banner("Gathering Interface Information from {}".format(
+                    dev.name)))
+                abstract = Lookup.from_device(dev)
+                intf = abstract.ops.interface.interface.Interface(dev)
+                intf.learn()
+                self.all_interfaces[dev.name] = intf.info
+            self.passed("Successfully parsed device interfaces")
+        except Exception as e:
+            log.critical('{}'.format(e))
+            self.failed("Exception during test exuectuio")
     # Second test section
     @aetest.test
     def check_CRC(self):
