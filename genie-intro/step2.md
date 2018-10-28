@@ -107,8 +107,12 @@ This time we will parse two device types with the same code!
 ## So What???
 
 Now that we don't have to worry about platform specific deetails, we can get
-just the information we care about.  Here's an example
+just the information we care about.  Here's an example.  Let's assume that we
+wanted to check all interfaces in the testbed for interface CRC errors.  
 
+To accomplish this, we can combine the devices into a single data structure,
+and loop over all of the interfaces using the same code.  We no longer
+care "what type" of device we are working with.
 
 <pre class="file" data-filename="genie-intro.py" data-target="append">
 all_interfaces = dict()
@@ -117,9 +121,13 @@ all_interfaces['nxos'] = nx_interface_details
 
 for device, interface_details in all_interfaces.items():
     for interface, details in interface_details.items():
-        if 'ipv4' in details:
-            for ip, details in details['ipv4'].items():
-                print("Device {} Interface {} IP details: {}".format(device, interface, ip))
+        counters = details.get('counters')
+        if counters:
+            if 'in_crc_errors' in counters:
+                counters = details['counters']
+                crc = counters['in_crc_errors']
+                print("Device: {} Interface: {} CRC Errors: {}".format(device, interface, crc))
+            
 </pre>
 
 ## Re-Run your code!
