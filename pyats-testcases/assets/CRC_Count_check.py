@@ -74,7 +74,9 @@ class CRC_count_check(aetest.Testcase):
             self.passed("Successfully parsed device interfaces")
         except Exception as e:
             log.critical('{}'.format(e))
-            self.failed("Exception during test exuectuio")
+            self.failed('{}'.format(e))
+
+
     # Second test section
     @aetest.test
     def check_CRC(self):
@@ -135,7 +137,7 @@ class common_cleanup(aetest.CommonCleanup):
     @aetest.subsection
     def clean_everything(self):
         """ Common Cleanup Subsection """
-        log.info("Aetest Common Cleanup ")
+        log.info("All Done! ")
 
 
 if __name__ == '__main__':  # pragma: no cover

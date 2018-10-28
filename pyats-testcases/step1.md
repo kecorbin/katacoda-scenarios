@@ -13,7 +13,7 @@ read through the following information, as this is fundamental to your understan
 We've also cloned some sample scripts for you to review. These scripts can also
 be found at the following Github repostiory.
 
-https://github.com/CiscoDevNet/pyats-sample-scripts`
+https://github.com/CiscoDevNet/pyats-sample-scripts
 
 
 ## Basic Test Script
