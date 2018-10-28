@@ -122,12 +122,6 @@ class CRC_count_check(aetest.Testcase):
         self.passed("All devices' interfaces CRC ERRORS Count is: 'Zero'")
 
 
-# #####################################################################
-# ####                       COMMON CLEANUP SECTION                 ###
-# #####################################################################
-# This is how to create a CommonCleanup
-# You can have 0 , or 1 CommonCleanup.
-# CommonCleanup can be named whatever you want :)
 class common_cleanup(aetest.CommonCleanup):
     """ Common Cleanup for Sample Test """
 

@@ -15,12 +15,8 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - Test Script for finding CRC interface errors",
         "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
       }
     ],
     "intro": {
