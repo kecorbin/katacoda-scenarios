@@ -6,6 +6,10 @@ You can activate the virtualenv by running the following commands
 
 `source venv/bin/activate`{{execute}}
 
+**NOTE:** the installation of all of the libraries is happening in the background, and may take a minute to complete.  So take your time and
+read through the following information, as this is fundamental to your understanding of pyATS.  
+
+
 We've also cloned some sample scripts for you to review. These scripts can also
 be found at the following Github repostiory.
 
@@ -97,9 +101,10 @@ Full documentation on Easypy can be found [here](https://pubhub.devnetcloud.com/
 
 Make sure you are in the proper directory
 
-`cd pyats-sample-scripts/basic`{{execute}}
-
-`easypy job/basic_example_job.py`{{execute}}
+```
+cd pyats-sample-scripts/basic
+easypy job/basic_example_job.py
+```{{execute}}
 
 
 After executing the test job, spend some time reviewing the test script again.  
