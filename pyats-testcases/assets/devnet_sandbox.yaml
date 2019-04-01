@@ -13,6 +13,7 @@ devices:
         username: root
     passwords:
         tacacs: D_Vay!_10&
+        line: D_Vay!_10&
 
     connections:
       defaults:
@@ -44,19 +45,3 @@ devices:
     custom:
       abstraction:
         order: [os, type]
-
-
-topology:
-  csr1000v:
-    interfaces:
-      GigabitEthernet1:
-        ipv4: 10.10.20.48
-        link: flat
-        type: ethernet
-
-  nxos:
-    interfaces:
-      Ethernet1/1:
-        ipv4: 10.10.20.48
-        link: flat
-        type: ethernet
