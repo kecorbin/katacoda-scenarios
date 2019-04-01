@@ -12,7 +12,6 @@ In this learning lab you are going to:
 
 * Learn about the benefits of Genie
 * Learn about Genie Operational Objects (genie.ops)
-* Learn about Genie Configuration Objects (genie.conf)
 * Install Genie Packages
 * Connect to devices via CLI using Genie
 * Execute show commands and parse results into platform agnostic structured data
