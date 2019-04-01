@@ -17,7 +17,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "install_deps.sh",
     },
     "assets": {
       "host01": [{
