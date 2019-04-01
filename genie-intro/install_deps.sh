@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo apt-get install -y libssl-dev
+apt-get update && apt-get install -y libssl-dev
